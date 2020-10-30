@@ -160,7 +160,7 @@ public class CRUD {
 
 	    while (rs.hasNext()) {
 	      OResult item = rs.next();
-	      System.out.println("Survey 1 has the following q: " + item.getProperty("text"));
+	      System.out.println("Survey 1 has the following question: " + item.getProperty("text"));
 	    }
 
 	    rs.close(); //REMEMBER TO ALWAYS CLOSE THE RESULT SET!!!
