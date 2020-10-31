@@ -3,6 +3,8 @@ package com.orient.test.rest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.orient.test.dto.Survey;
+
 import com.orientechnologies.orient.core.db.ODatabaseSession;
 import com.orientechnologies.orient.core.db.OrientDB;
 import com.orientechnologies.orient.core.db.OrientDBConfig;
@@ -37,6 +39,8 @@ public class CRUD {
 	}
 	
 	private static void testData(ODatabaseSession db) {
+		
+		//OVertex s2 = new Survey(db).setName("algo");
 		 
 	    OVertex survey1= createSurvey(db, "Lineal", 3,"Survey1");
 	    OVertex q1= createQuestion(db, "How are you?",1, "Multiple option");
